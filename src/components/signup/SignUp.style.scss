@@ -1,0 +1,60 @@
+@import "../../theme/styles.scss";
+
+.signup-container {
+    background: $color-white;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.img-container {
+    display: flex;
+    flex: 0.5;
+    background: $color-white;
+}
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inner-container {
+    display: flex;
+    flex: 0.5;
+    min-height: 100%;
+    background: $color-white;
+    border-left: 2px solid $color-gray;
+}
+.signup {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 5vh 10vw;
+}
+h3 {
+    font-family: monospace;
+    text-align: center;
+    margin: 2rem !important;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+label {
+    display: inline;
+    margin-bottom: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    flex: 0.48;
+}
+
+
+    

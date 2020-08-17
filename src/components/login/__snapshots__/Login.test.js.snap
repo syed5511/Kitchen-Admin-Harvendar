@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders correctly 1`] = `
+<div
+  class="login-container"
+>
+  <div
+    class="img-container"
+  />
+  <div
+    class="inner-container"
+  >
+    <div
+      class="login"
+    >
+      <h3>
+        Kitchen
+      </h3>
+      <p>
+        Welcome Back, Please login to your account
+      </p>
+      <div
+        class="login-form"
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            className=""
+            htmlFor="username"
+          >
+            Username
+          </label>
+          <input
+            className="form-control"
+            id="username"
+            name="username"
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            className=""
+            htmlFor="password"
+          >
+            Password
+          </label>
+          <input
+            className="form-control"
+            id="password"
+            name="password"
+            type="password"
+          />
+        </div>
+        <div
+          class="horizontal-container"
+        >
+          <div
+            className="form-check"
+          >
+            <label
+              className="form-check-label"
+            >
+              <input
+                className="form-check-input"
+                type="checkbox"
+              />
+              Remember me
+            </label>
+          </div>
+          <label
+            className=""
+          >
+            Forgot Password
+          </label>
+        </div>
+      </div>
+      <div
+        class="horizontal-container"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Login
+        </button>
+        <button
+          aria-label={null}
+          className="btn btn-secondary"
+          onClick={[Function]}
+        >
+          Sign Up
+        </button>
+      </div>
+      <p>
+        Term of use. Privacy policy
+      </p>
+    </div>
+  </div>
+</div>
+`;
