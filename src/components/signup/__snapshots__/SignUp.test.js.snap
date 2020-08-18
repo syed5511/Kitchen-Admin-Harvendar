@@ -10,8 +10,14 @@ exports[`SignUp renders correctly 1`] = `
   <div
     class="inner-container"
   >
-    <div
+    <form
+      action="#"
       class="signup"
+      className="av-valid"
+      method="get"
+      noValidate={true}
+      onKeyDown={[Function]}
+      onSubmit={[Function]}
     >
       <h3>
         Kitchen Registration
@@ -26,10 +32,19 @@ exports[`SignUp renders correctly 1`] = `
           Kitchen Name (OR) Company Name
         </label>
         <input
-          className="form-control"
+          className="is-untouched is-pristine av-valid form-control"
           id="name"
+          maxLength={24}
+          minLength={6}
           name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyUp={[Function]}
+          required={true}
           type="text"
+          value=""
         />
       </div>
       <div
@@ -42,10 +57,18 @@ exports[`SignUp renders correctly 1`] = `
           Address(Depot)
         </label>
         <input
-          className="form-control"
-          id="name"
+          className="is-untouched is-pristine av-valid form-control"
+          id="address"
+          minLength={6}
           name="address"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyUp={[Function]}
+          required={true}
           type="text"
+          value=""
         />
       </div>
       <div
@@ -61,10 +84,19 @@ exports[`SignUp renders correctly 1`] = `
             Enter Zip Code
           </label>
           <input
-            className="form-control"
+            className="is-untouched is-pristine av-valid form-control"
             id="zip_code"
+            maxLength={8}
+            minLength={6}
             name="zip_code"
-            type="text"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onInput={[Function]}
+            onKeyUp={[Function]}
+            required={true}
+            type="number"
+            value=""
           />
         </div>
         <div
@@ -85,17 +117,27 @@ exports[`SignUp renders correctly 1`] = `
             <option
               value="UP"
             >
-              Select
+              STATE-1
             </option>
             <option
               value="UP"
             >
-              UP
+              STATE-2
             </option>
             <option
-              value="Delhi"
+              value="UP"
             >
-              Delhi
+              STATE-3
+            </option>
+            <option
+              value="UP"
+            >
+              STATE-4
+            </option>
+            <option
+              value="UP"
+            >
+              STATE-5
             </option>
           </select>
         </div>
@@ -160,10 +202,19 @@ exports[`SignUp renders correctly 1`] = `
             Contact
           </label>
           <input
-            className="form-control"
+            className="is-untouched is-pristine av-valid form-control"
             id="contact"
+            maxLength={10}
+            minLength={10}
             name="contact"
-            type="text"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onInput={[Function]}
+            onKeyUp={[Function]}
+            required={true}
+            type="tel"
+            value=""
           />
         </div>
       </div>
@@ -177,10 +228,17 @@ exports[`SignUp renders correctly 1`] = `
           Email Address
         </label>
         <input
-          className="form-control"
+          className="is-untouched is-pristine av-valid form-control"
           id="email"
           name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyUp={[Function]}
+          required={true}
           type="email"
+          value=""
         />
       </div>
       <div
@@ -193,10 +251,19 @@ exports[`SignUp renders correctly 1`] = `
           Enter Password
         </label>
         <input
-          className="form-control"
+          className="is-untouched is-pristine av-valid form-control"
           id="password"
+          maxLength={16}
+          minLength={8}
           name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyUp={[Function]}
+          required={true}
           type="password"
+          value=""
         />
       </div>
       <div
@@ -204,27 +271,44 @@ exports[`SignUp renders correctly 1`] = `
       >
         <label
           className=""
-          htmlFor="password"
+          htmlFor="re_password"
         >
           Re-Enter Password
         </label>
         <input
-          className="form-control"
-          id="password"
-          name="password"
+          className="is-untouched is-pristine av-valid form-control"
+          id="re_password"
+          name="re_password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyUp={[Function]}
           type="password"
+          value=""
         />
       </div>
       <div
         className="form-check"
       >
+        <input
+          checked={false}
+          className="is-untouched is-pristine av-valid form-check-input"
+          id="checkbox_agree"
+          name="checkbox_agree"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyUp={[Function]}
+          required={true}
+          type="checkbox"
+          value={false}
+        />
         <label
-          className="form-check-label"
+          className=""
+          htmlFor="checkbox_agree"
         >
-          <input
-            className="form-check-input"
-            type="checkbox"
-          />
           I agree with terms and conditions
         </label>
       </div>
@@ -236,16 +320,20 @@ exports[`SignUp renders correctly 1`] = `
         Sign Up
       </button>
       <div
-        class="horizontal-container"
+        class="horizontal-container mb-5"
       >
-        <p>
+        <label
+          className="btn text-left m-0 p-0"
+        >
           Login
-        </p>
-        <p>
+        </label>
+        <label
+          className="btn text-right m-0 p-0"
+        >
           Forgot Password
-        </p>
+        </label>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 `;

@@ -26,6 +26,8 @@
     min-height: 100%;
     background: $color-white;
     border-left: 2px solid $color-gray;
+    justify-content: center;
+    padding: 20px;
 }
 .signup {
     display: flex;
@@ -40,7 +42,8 @@ h3 {
 }
 
 .btn {
-    margin-top: 2rem;
+    margin: 1rem 0;
+    width: 100%;
 }
 
 label {

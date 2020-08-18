@@ -19,8 +19,14 @@ exports[`Login renders correctly 1`] = `
       <p>
         Welcome Back, Please login to your account
       </p>
-      <div
+      <form
+        action="#"
         class="login-form"
+        className="av-valid"
+        method="get"
+        noValidate={true}
+        onKeyDown={[Function]}
+        onSubmit={[Function]}
       >
         <div
           className="form-group"
@@ -32,10 +38,19 @@ exports[`Login renders correctly 1`] = `
             Username
           </label>
           <input
-            className="form-control"
+            className="is-untouched is-pristine av-valid form-control"
             id="username"
+            maxLength={24}
+            minLength={6}
             name="username"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onInput={[Function]}
+            onKeyUp={[Function]}
+            required={true}
             type="text"
+            value=""
           />
         </div>
         <div
@@ -48,10 +63,18 @@ exports[`Login renders correctly 1`] = `
             Password
           </label>
           <input
-            className="form-control"
+            className="is-untouched is-pristine av-valid form-control"
             id="password"
+            minLength={8}
             name="password"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onInput={[Function]}
+            onKeyUp={[Function]}
+            required={true}
             type="password"
+            value=""
           />
         </div>
         <div
@@ -76,25 +99,25 @@ exports[`Login renders correctly 1`] = `
             Forgot Password
           </label>
         </div>
-      </div>
-      <div
-        class="horizontal-container"
-      >
-        <button
-          aria-label={null}
-          className="btn btn-primary"
-          onClick={[Function]}
+        <div
+          class="horizontal-container"
         >
-          Login
-        </button>
-        <button
-          aria-label={null}
-          className="btn btn-secondary"
-          onClick={[Function]}
-        >
-          Sign Up
-        </button>
-      </div>
+          <button
+            aria-label={null}
+            className="btn btn-primary"
+            onClick={[Function]}
+          >
+            Login
+          </button>
+          <button
+            aria-label={null}
+            className="btn btn-secondary"
+            onClick={[Function]}
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
       <p>
         Term of use. Privacy policy
       </p>

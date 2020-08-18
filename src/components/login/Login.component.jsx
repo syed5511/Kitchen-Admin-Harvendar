@@ -1,21 +1,14 @@
 import React, { useState } from 'react'
 import { FormGroup, Label, Input } from 'reactstrap';
+import { AvForm, AvField } from 'availity-reactstrap-validation';
 import Button from '../common/button'
 import {
   KITCHEN, USERNAME, PASSWORD, MSG_REMEMBER_ME, LOGIN,
-  SIGN_UP, FORGOT, MSG_LOGIN, WELCOME, BACK, MSG_PRIVACY_POLICY
+  SIGN_UP, FORGOT, MSG_LOGIN, WELCOME, BACK, MSG_PRIVACY_POLICY, INVALID
 } from '../../utils/Constants'
 import './Login.style.scss'
 
 const Login = (props) => {
-
-  const onSelectState = (selectedState) => {
-    console.log(selectedState)
-  }
-
-  const onSelectCity = (selectedCity) => {
-    console.log(selectedCity)
-  }
 
   return (
     <div class="login-container">
@@ -24,15 +17,16 @@ const Login = (props) => {
         <div class="login">
           <h3>{KITCHEN}</h3>
           <p>{`${WELCOME} ${BACK}, ${MSG_LOGIN}`}</p>
-          <div class="login-form">
-            <FormGroup>
-              <Label for="username">{USERNAME}</Label>
-              <Input type="text" name="username" id="username" />
-            </FormGroup>
-            <FormGroup>
-              <Label for="password">{PASSWORD}</Label>
-              <Input type="password" name="password" id="password" />
-            </FormGroup>
+          <AvForm class="login-form">
+            <AvField name="username" label={USERNAME} type="text" errorMessage={`${INVALID} ${USERNAME}`} validate={{
+              required: { value: true },
+              minLength: { value: 6 },
+              maxLength: { value: 24 }
+            }} />
+            <AvField name="password" label={PASSWORD} type="password" errorMessage={`${INVALID} ${PASSWORD}`} validate={{
+              required: { value: true },
+              minLength: { value: 8 }
+            }} />            
             <div class="horizontal-container">
               <FormGroup check>
                 <Label check>
@@ -42,11 +36,11 @@ const Login = (props) => {
               </FormGroup>
               <Label>{`${FORGOT} ${PASSWORD}`}</Label>
             </div>
-          </div>
-          <div class="horizontal-container">
-            <Button type="primary" title={LOGIN}></Button>
-            <Button type="secondary" title={SIGN_UP}></Button>
-          </div>
+            <div class="horizontal-container">
+              <Button type="primary" title={LOGIN}></Button>
+              <Button type="secondary" title={SIGN_UP}></Button>
+            </div>
+          </AvForm>
           <p>{MSG_PRIVACY_POLICY}</p>
         </div>
       </div>

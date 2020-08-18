@@ -4,7 +4,7 @@ import SignUp from './components/signup/SignUp.component'
 
 const App = () => {
   return (
-    <Login/>
+    <SignUp/>
   )
 }
 export default App;

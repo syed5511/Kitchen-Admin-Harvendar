@@ -20,11 +20,14 @@ export const SIGN_UP = 'Sign Up'
 export const WELCOME = 'Welcome'
 export const BACK = 'Back'
 export const USERNAME = 'Username'
+export const INVALID = 'Invalid'
+export const PLEASE = 'Please'
 
 export const MSG_AGREE = 'I agree with terms and conditions'
 export const MSG_LOGIN = 'Please login to your account'
 export const MSG_PRIVACY_POLICY = 'Term of use. Privacy policy'
 export const MSG_REMEMBER_ME = 'Remember me'
+export const MSG_DOSE_NOT_MATCH = 'does not matched!'
 
 
 
