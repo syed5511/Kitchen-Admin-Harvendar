@@ -23,10 +23,7 @@ const SignUp = ({history}) => {
     }
 
     const handleSubmit = (event, errors, values) => {
-        console.log('Error>>> '+ errors)
-        console.log('Values>>> '+ values)
-        if(!errors.length)
-            return <Login/>
+        
     }
 
     return (
