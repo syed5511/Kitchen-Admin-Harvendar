@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FormGroup, Label, Input} from 'reactstrap';
+import { FormGroup, Label, Input, FormFeedback, FormText} from 'reactstrap';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import Button from '../common/button'
 import {
@@ -11,7 +11,7 @@ import {
 import './SignUp.style.scss'
 import Login from '../login/Login.component';
 
-const SignUp = (props) => {
+const SignUp = ({history}) => {
 
     const [ inputData, setInputData ] = useState();
     const onSelectState = (values) => {
@@ -91,7 +91,7 @@ const SignUp = (props) => {
                     <AvField  type="checkbox" name="checkbox_agree" label={MSG_AGREE} required />
                     <Button type="primary" title={SIGN_UP}></Button>
                     <div class="horizontal-container mb-5">
-                        <Label className="btn text-left m-0 p-0">{LOGIN}</Label>
+                        <Label className="btn text-left m-0 p-0" onClick={() => history.push('/login')}>{LOGIN}</Label>
                         <Label className="btn text-right m-0 p-0">{`${FORGOT} ${PASSWORD}`}</Label>
                     </div>
                 </AvForm>

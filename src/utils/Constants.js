@@ -1,3 +1,4 @@
+//----------------STRINGS------------------------
 export const KITCHEN = 'Kitchen'
 export const REGISTRATION = 'Registration'
 export const NAME = 'Name'
@@ -22,12 +23,27 @@ export const BACK = 'Back'
 export const USERNAME = 'Username'
 export const INVALID = 'Invalid'
 export const PLEASE = 'Please'
+export const ITEM = 'Item'
+export const SERVING = 'Serving'
+export const DAYS = 'Days'
+export const REFINE = 'Refine'
+export const BY = 'By'
+export const TYPE = 'Type'
+export const SEARCH = 'Search'
+export const ACTION = 'Action'
 
+//------------------------------END---------------------------
+
+//------------------------------MESSAGES----------------------
 export const MSG_AGREE = 'I agree with terms and conditions'
 export const MSG_LOGIN = 'Please login to your account'
 export const MSG_PRIVACY_POLICY = 'Term of use. Privacy policy'
 export const MSG_REMEMBER_ME = 'Remember me'
 export const MSG_DOSE_NOT_MATCH = 'does not matched!'
+//------------------------------------------------------------
+
+//-----------------------------ARRAYS-------------------------
+export const WEEK_DAYS = ['Son', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 
 

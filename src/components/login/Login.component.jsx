@@ -8,7 +8,7 @@ import {
 } from '../../utils/Constants'
 import './Login.style.scss'
 
-const Login = (props) => {
+const Login = ({history}) => {
 
   return (
     <div class="login-container">
@@ -38,7 +38,7 @@ const Login = (props) => {
             </div>
             <div class="horizontal-container">
               <Button type="primary" title={LOGIN}></Button>
-              <Button type="secondary" title={SIGN_UP}></Button>
+              <Button type="secondary" title={SIGN_UP} onClick={() => history.push('/signup')}></Button>
             </div>
           </AvForm>
           <p>{MSG_PRIVACY_POLICY}</p>
