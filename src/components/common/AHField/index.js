@@ -1,14 +1,13 @@
 import React from 'react'
-import { Button as LibButton} from 'reactstrap'
-import './Button.style.scss'
+import { FormGroup, Label, Input, FormFeedback } from 'reactstrap'
+import './AHField.style.scss'
 
-const Button = ({ name, label, type, isValid, errorMessage }) => {
+const AHField = ({ name, label, type, isValid, errorMessage }) => {
     return (<FormGroup>
         <Label for={name}>{label}</Label>
-        <Input valid />
-        <FormFeedback valid>Sweet! that name is available</FormFeedback>
-        <FormText>Example help text that remains unchanged.</FormText>
-      </FormGroup>)
+        <Input valid={isValid} type={type} />
+        <FormFeedback>{errorMessage}</FormFeedback>
+    </FormGroup>)
 }
 
-export default Button
+export default AHField
