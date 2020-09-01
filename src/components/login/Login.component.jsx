@@ -10,6 +10,10 @@ import './Login.style.scss'
 
 const Login = ({history}) => {
 
+  const handleLogin = () => {
+    history.push('/dashboard')
+  }
+
   return (
     <div class="login-container">
       <div class="img-container"></div>
@@ -37,7 +41,7 @@ const Login = ({history}) => {
               <Label>{`${FORGOT} ${PASSWORD}`}</Label>
             </div>
             <div class="horizontal-container">
-              <Button type="primary" title={LOGIN}></Button>
+              <Button type="primary" title={LOGIN} onClick={handleLogin} ></Button>
               <Button type="secondary" title={SIGN_UP} onClick={() => history.push('/signup')}></Button>
             </div>
           </AvForm>

@@ -1,0 +1,17 @@
+@import "../../../theme/styles.scss";
+
+.navbar {
+    background-color: $color-navbar;
+    color: white;
+
+    .nav-link {
+        color: white;
+    }
+
+    .right-img {
+        width: 30px;
+        height: 30px; 
+        margin: 0 10px;
+    }
+}
+

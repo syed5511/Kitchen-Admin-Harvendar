@@ -31,6 +31,17 @@ export const BY = 'By'
 export const TYPE = 'Type'
 export const SEARCH = 'Search'
 export const ACTION = 'Action'
+export const UID = 'UID'
+export const EDIT = 'Edit'
+export const ON = 'On'
+export const THE = 'The'
+export const MENU = 'Menu'
+export const IMAGE = 'Image'
+export const TOTAL = 'Total'
+export const PRODUCTS = 'Products'
+export const STATUS = 'Status' 
+export const ACTIVE = 'Active'
+export const INACTIVE = 'Inactive' 
 
 //------------------------------END---------------------------
 
@@ -43,7 +54,7 @@ export const MSG_DOSE_NOT_MATCH = 'does not matched!'
 //------------------------------------------------------------
 
 //-----------------------------ARRAYS-------------------------
-export const WEEK_DAYS = ['Son', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+export const WEEK_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 
 
