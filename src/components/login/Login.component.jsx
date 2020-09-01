@@ -10,8 +10,12 @@ import './Login.style.scss'
 
 const Login = ({history}) => {
 
-  const handleLogin = () => {
-    history.push('/dashboard')
+
+  const handleSubmit = (values) => {
+    if(!values.length)
+    {
+      history.push('/dashboard')
+    }
   }
 
   return (
@@ -21,7 +25,7 @@ const Login = ({history}) => {
         <div class="login">
           <h3>{KITCHEN}</h3>
           <p>{`${WELCOME} ${BACK}, ${MSG_LOGIN}`}</p>
-          <AvForm class="login-form">
+          <AvForm class="login-form" onSubmit={handleSubmit}>
             <AvField name="username" label={USERNAME} type="text" errorMessage={`${INVALID} ${USERNAME}`} validate={{
               required: { value: true },
               minLength: { value: 6 },
@@ -41,7 +45,7 @@ const Login = ({history}) => {
               <Label>{`${FORGOT} ${PASSWORD}`}</Label>
             </div>
             <div class="horizontal-container">
-              <Button type="primary" title={LOGIN} onClick={handleLogin} ></Button>
+              <Button type="primary" title={LOGIN} ></Button>
               <Button type="secondary" title={SIGN_UP} onClick={() => history.push('/signup')}></Button>
             </div>
           </AvForm>
